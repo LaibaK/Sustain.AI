@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        --background: 0.98 0.01 150;
+        --foreground: 0.2 0.02 150;
+        --card: 1 0 0;
+        --card-foreground: 0.2 0.02 150;
+        --popover: 1 0 0;
+        --popover-foreground: 0.2 0.02 150;
+        --primary: 0.55 0.15 165;
+        --primary-foreground: 0.99 0 0;
+        --secondary: 0.95 0.02 160;
+        --secondary-foreground: 0.25 0.03 165;
+        --muted: 0.96 0.01 155;
+        --muted-foreground: 0.5 0.03 160;
+        --accent: 0.92 0.03 170;
+        --accent-foreground: 0.25 0.03 165;
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        --border: 0.9 0.02 160;
+        --input: 0.9 0.02 160;
+        --ring: 0.55 0.15 165;
+        --chart-1: 0.55 0.15 165;
+        --chart-2: 0.6 0.12 180;
+        --chart-3: 0.65 0.14 195;
+        --chart-4: 0.5 0.16 150;
+        --chart-5: 0.7 0.13 210;
+    }
+
+    .dark {
+        --background: 0.15 0.02 160;
+        --foreground: 0.95 0.01 155;
+        --card: 0.2 0.02 160;
+        --card-foreground: 0.95 0.01 155;
+        --popover: 0.18 0.02 160;
+        --popover-foreground: 0.95 0.01 155;
+        --primary: 0.65 0.14 170;
+        --primary-foreground: 0.15 0.02 160;
+        --secondary: 0.25 0.03 165;
+        --secondary-foreground: 0.95 0.01 155;
+        --muted: 0.25 0.03 165;
+        --muted-foreground: 0.65 0.03 165;
+        --accent: 0.3 0.04 170;
+        --accent-foreground: 0.95 0.01 155;
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.15 0.02 160;
+        --border: 0.3 0.03 165;
+        --input: 0.3 0.03 165;
+        --ring: 0.5 0.1 170;
+        --chart-1: 0.6 0.16 165;
+        --chart-2: 0.65 0.14 180;
+        --chart-3: 0.7 0.12 195;
+        --chart-4: 0.55 0.18 150;
+        --chart-5: 0.75 0.11 210;
+    }
+
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
